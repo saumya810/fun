@@ -30,6 +30,7 @@ public class UserResource {
     public UserInfo createPerson(UserInfo person) {
     	person.setCreatedDate(new Date());
     	person.setLastLoggedIn(new Date());
+    	//test
         return userDAO.create(person);
     }
 
